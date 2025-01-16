@@ -311,16 +311,16 @@ header {
 
 
 /* team-section */
- 
 
-.team{
-    margin:102.27px 0 54px 0;
+
+.team {
+    margin: 102.27px 0 54px 0;
     display: flex;
     flex-direction: column;
     gap: 45px;
 }
 
-.team-text{
+.team-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -351,16 +351,18 @@ header {
     line-height: 25px;
 }
 
-.team-card{
+.team-card {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 47px;
-    
+
 }
-.team-member{
+
+.team-member {
     box-shadow: 0 4px 15px rgba(00, 00, 00, 25%);
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .team-member:hover {
@@ -368,29 +370,32 @@ header {
 
 }
 
-.member-card{
+.member-card {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 25px;
 }
 
-.member{
+.member {
     display: flex;
     flex-direction: column;
     gap: 19px;
 }
 
-.profile-image{
-    height: 175px;width: 175px;display: flex;
+.profile-image {
+    height: 175px;
+    width: 175px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
-    
+
 }
-.profile-image img{
+
+.profile-image img {
     height: auto;
     width: auto;
     object-fit: cover;
@@ -419,9 +424,10 @@ header {
     line-height: var(--line-height-125);
 }
 
-.view-team-button{
+.view-team-button {
     display: flex;
     justify-content: center;
+    transition: all 0.2s ease;
 }
 
 .view-team-button button {
@@ -442,18 +448,18 @@ header {
 
 
 /* footer-section */
-.footer-section{
+.footer-section {
     background-color: var(--bg-color);
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 51px 0 49px 0;
     align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
     width: 50%;
     display: flex;
     gap: 20px;
@@ -465,4 +471,97 @@ header {
     font-weight: 400;
     color: var(--font-white);
     line-height: var(--line-height-125);
+}
+
+
+
+/* portfolio css */
+
+.portfolio-main-page {
+    padding: 30px 0 99px 0;
+}
+
+.portfolio-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-text h3 {
+    font-family: var(--work-sans);
+    color: var(--bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 5px;
+}
+
+.portfolio-text h2 {
+    font-family: var(--crimson-text);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.portfolio-text p {
+    font-family: var(--work-sans);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* portfolio -images css */
+
+.portfolio-main-page{
+    /* max-width: var(--max-width); */
+}
+.portfolio-images {
+    margin-top: 82px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: space-between; */
+    gap: 55px;
+}
+
+.portfolio-image{
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
+    
+}
+
+.portfolio-image img{
+    max-width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+.portfolio-image img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    transition: all 0.2s ease;
+}
+
+.portfolio-button button{
+    font-family: var(--work-sans);
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 13px 29.5px 10px 29.5px;
+    color: var(--font-white);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
 }
