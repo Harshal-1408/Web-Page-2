@@ -714,3 +714,109 @@ header {
 .service-learn-more-button button:hover {
     box-shadow: 0 4px 0 #333, 0 2px 7px #333;
 }
+
+/* contact-page-css */
+
+.contact-main-page{
+    padding: 30px 0 93px 0;
+}
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.contact-text h2 {
+    font-family: var(--crimson-text);
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.contact-text p {
+    font-family: var(--work-sans);
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.contact-us-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-form{
+    width: 50%;
+    height: 100%;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: space-between;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    font-family: var(--work-sans);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+input{
+    height: 38px;
+    width: 575px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: #EEEEEE;
+}
+
+textarea{
+    height: 75px;
+    width: 575px;
+    border-radius: 5px;
+    border-color:  black;
+    background-color: #EEEEEE;
+}
+
+.submit-btn button{
+    padding: 13px 252.13px 10px 252.13px;
+    background-color: black;
+    color: var(--font-white);
+    font-family: var(--work-sans);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.submit-btn button:hover {
+    box-shadow: 0 4px 0 #333, 0 2px 7px #333;
+}
+
+.contact-map img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* Responsive web page */
+
+/* Home page */
+
